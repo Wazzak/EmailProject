@@ -1,0 +1,66 @@
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\ApplicationInsights.config
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\csc.exe
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\vbc.exe
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\EmailSite.dll.config
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\EmailSite.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\EmailSite.pdb
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\obj\Debug\EmailSite.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\obj\Debug\EmailSite.dll
+C:\Users\Administrator\Documents\GitHub\QACinema\QaCinema\EmailSite\EmailSite\obj\Debug\EmailSite.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\ApplicationInsights.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\csc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\vbc.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\EmailSite.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\EmailSite.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\EmailSite.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.Web.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.Web.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\obj\Debug\EmailSite.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\obj\Debug\EmailSite.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\EmailSite\EmailSite\obj\Debug\EmailSite.pdb
