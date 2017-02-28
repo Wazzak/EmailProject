@@ -16,7 +16,7 @@ namespace EmailSite
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			con = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = 'C:\\Users\\Administrator\\Documents\\Visual Studio 2015\\Projects\\EmailSite\\EmailSite\\App_Data\\EmailDatabase.mdf'; Integrated Security = True");
+			con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Administrator\\Documents\\GitHub\\EmailProject\\EmailSite\\EmailSite\\App_Data\\EmailDatabase.mdf;Integrated Security=True");
 			cmd = new SqlCommand();
 
 			try

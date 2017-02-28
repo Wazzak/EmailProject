@@ -20,7 +20,7 @@ namespace EmailSite
 
 			try
 			{
-				con = new SqlConnection("Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = 'C:\\Users\\Administrator\\Documents\\Visual Studio 2015\\Projects\\EmailSite\\EmailSite\\App_Data\\EmailDatabase.mdf'; Integrated Security = True");
+				con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Administrator\\Documents\\GitHub\\EmailProject\\EmailSite\\EmailSite\\App_Data\\EmailDatabase.mdf;Integrated Security=True");
 				con.Open();
 				cmd.Connection = con;
 			}
