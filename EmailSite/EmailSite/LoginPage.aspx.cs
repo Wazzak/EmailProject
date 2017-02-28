@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace EmailSite
 {
@@ -16,7 +17,9 @@ namespace EmailSite
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Administrator\\Documents\\GitHub\\EmailProject\\EmailSite\\EmailSite\\App_Data\\EmailDatabase.mdf;Integrated Security=True");
+			String dir = System.AppDomain.CurrentDomain.BaseDirectory + "App_Data\\EmailDatabase.mdf";
+
+			con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + dir + ";Integrated Security=True");
 			cmd = new SqlCommand();
 
 			try
