@@ -17,6 +17,12 @@ namespace EmailSite
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			if (Request.Cookies["userColorCookie"] != null)
+			{
+				HttpCookie cook = Request.Cookies["userColorCookie"];
+				form1.Style.Add("background-color", cook.Value.ToString());
+			}
+
 			String dir = System.AppDomain.CurrentDomain.BaseDirectory + "App_Data\\EmailDatabase.mdf";
 
 			con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + dir + ";Integrated Security=True");
@@ -62,20 +68,29 @@ namespace EmailSite
 		{
 			Response.Redirect("ForgetPage.aspx");
 		}
-
-		protected void red_check(object sender, EventArgs e)
+		
+		protected void red_click(object sender, EventArgs e)
 		{
-
+			HttpCookie userColor = new HttpCookie("userColorCookie");
+			userColor.Value = "RED";
+			Response.Cookies.Add(userColor);
+				
 		}
 
-		protected void blue_check(object sender, EventArgs e)
+		protected void blue_click(object sender, EventArgs e)
 		{
-
+			HttpCookie userColor = new HttpCookie("userColorCookie");
+			userColor.Value = "BLUE";
+			Response.Cookies.Add(userColor);
+			
 		}
 
-		protected void yellow_check(object sender, EventArgs e)
+		protected void yellow_click(object sender, EventArgs e)
 		{
-
+			HttpCookie userColor = new HttpCookie("userColorCookie");
+			userColor.Value = "YELLOW";
+			Response.Cookies.Add(userColor);
+			
 		}
 	}
 }

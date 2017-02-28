@@ -21,11 +21,11 @@
         <p>
             Body:</p>
         <p>
-            <asp:TextBox ID="TextBox3" runat="server" Height="153px" style="margin-left: 0px" Width="246px"></asp:TextBox>
+            <asp:TextBox ID="TextBox3" runat="server" Height="153px" style="margin-left: 0px" Width="246px" MaxLength="255"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="Button1" runat="server" Text="Send" />
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="margin-left: 18px" Text="Cancel" />
+            <asp:Button ID="Button1" runat="server" Text="Send" OnClick="send_click" />
+            <asp:Button ID="Button2" runat="server" OnClick="cancel_click" style="margin-left: 18px" Text="Cancel" />
         </p>
     </form>
 </body>

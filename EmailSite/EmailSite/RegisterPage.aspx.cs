@@ -39,8 +39,6 @@ namespace EmailSite
 		protected void create_click(object sender, EventArgs e)
 		{
 			String newName, newAdd, newMail, newAnswer, newPass;
-            int i = 0;
-            int y = 0;
 			newName = TextBox1.Text;
 			newAdd = TextBox2.Text;
 			newMail = TextBox3.Text;

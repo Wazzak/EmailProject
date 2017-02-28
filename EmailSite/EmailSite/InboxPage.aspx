@@ -12,7 +12,7 @@
     
         Inbox<br />
         <br />
-        <asp:Button ID="Button1" runat="server" Text="Compose" />
+        <asp:Button ID="Button1" runat="server" Text="Compose" OnClick="compose_click" />
         <asp:Button ID="Button2" runat="server" style="margin-left: 11px" Text="Address Book" />
         <asp:Button ID="Button3" runat="server" style="margin-left: 11px" Text="Logout" />
     

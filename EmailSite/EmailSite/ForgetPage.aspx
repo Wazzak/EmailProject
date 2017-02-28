@@ -17,12 +17,12 @@
             What is your favourite colour?<asp:TextBox ID="TextBox2" runat="server" style="margin-left: 11px"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="Button1" runat="server" Height="25px" Text="Get Password" />
+            <asp:Button ID="Button1" runat="server" Height="25px" Text="Get Password" OnClick="get_click" />
         </p>
         <p>
             Your password is:<asp:TextBox ID="TextBox3" runat="server" Height="16px" style="margin-left: 16px" Width="113px"></asp:TextBox>
         </p>
-        <asp:Button ID="Button2" runat="server" Text="Home" />
+        <asp:Button ID="Button2" runat="server" Text="Home" OnClick="home_click" />
     </form>
 </body>
 </html>

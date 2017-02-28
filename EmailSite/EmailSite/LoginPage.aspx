@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div id="words" runat="server">
     
         Email:<asp:TextBox ID="TextBox1" runat="server" style="margin-left: 11px"></asp:TextBox>
     
@@ -29,9 +29,9 @@
         <p>
             Color:</p>
         <p>
-            <asp:RadioButton ID="RadioButton1" runat="server" OnCheckedChanged="red_check" Text="Red" />
-            <asp:RadioButton ID="RadioButton2" runat="server" OnCheckedChanged="blue_check" Text="Blue" />
-            <asp:RadioButton ID="RadioButton3" runat="server" OnCheckedChanged="yellow_check" Text="Yellow" />
+            <asp:Button ID="Button4" runat="server" OnClick="red_click" Text="Red" />
+            <asp:Button ID="Button5" runat="server" OnClick="blue_click" style="margin-left: 13px" Text="Blue" />
+            <asp:Button ID="Button6" runat="server" OnClick="yellow_click" style="margin-left: 9px" Text="Yellow" />
         </p>
     </form>
 </body>
