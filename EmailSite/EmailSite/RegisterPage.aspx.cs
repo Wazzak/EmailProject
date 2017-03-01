@@ -42,6 +42,7 @@ namespace EmailSite
 			newName = TextBox1.Text;
 			newAdd = TextBox2.Text;
 			newMail = TextBox3.Text;
+
 			
 			if(TextBox4.Text == TextBox5.Text)
 			{
@@ -57,6 +58,12 @@ namespace EmailSite
 			}
 
 			newAnswer = TextBox6.Text;
+
+			if(newName == "" || newAdd == "" || newMail == "" || newAnswer == "" || newPass == "")
+			{
+				Response.Write("Please insert all values");
+				return;
+			}
 
 			cmd.CommandText = "insert into users values('" + newMail + "','" + newPass + "','" + newName + "','" + newAdd + "','" + newAnswer + "')";
 

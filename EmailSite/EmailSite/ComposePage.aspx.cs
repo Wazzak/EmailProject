@@ -16,6 +16,13 @@ namespace EmailSite
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			if(Session["User"] == null)
+			{
+				form1.Style.Add("visibility", "hidden");
+				Response.Write("Error, not logged in");
+				return;
+			}
+
 			if (Request.Cookies["userColorCookie"] != null)
 			{
 				HttpCookie cook = Request.Cookies["userColorCookie"];
@@ -38,6 +45,16 @@ namespace EmailSite
 				Response.Write(ex.ToString());
 			}
 
+			if(Request["To"] != null && Request["S"] != null)
+			{
+				TextBox1.Text = Request["To"].ToString();
+				TextBox2.Text = Request["S"].ToString();
+			}
+			else if (Request["To"] != null)
+			{
+				TextBox1.Text = Request["To"].ToString();				
+			}
+
 
 		}		
 
@@ -50,6 +67,12 @@ namespace EmailSite
 			subject = TextBox2.Text;
 			body = TextBox3.Text;
 			snd = Session["User"].ToString();
+
+			if(rcv == "" || subject == "" || body == "")
+			{
+				Response.Write("Please insert all values");
+				return;
+			}
 
 			cmd.CommandText = "INSERT INTO MAILS (Receiver, Sender, Subject, Body) VALUES('" + rcv + "','" + snd + "','" + subject + "','" + body + "')";
 			cmd.ExecuteNonQuery();

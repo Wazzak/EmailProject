@@ -2,9 +2,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title></title>
+     <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
     <form id="form1" runat="server">
@@ -17,7 +18,7 @@
             Password:<asp:TextBox ID="TextBox2" runat="server" style="margin-left: 11px"></asp:TextBox>
         </p>
         <p>
-            <asp:CheckBox ID="CheckBox1" runat="server" Text="Remember Me" />
+            <asp:Button ID="Button7" runat="server" OnClick="remember_click" Text="Remember Me" />
         </p>
         <p>
             <asp:Button ID="Button1" runat="server" OnClick="login_click" Text="Login" Width="51px" />

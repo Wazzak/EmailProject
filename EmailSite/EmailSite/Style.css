@@ -1,0 +1,28 @@
+span
+{
+	border-style: solid;
+	position: absolute;
+	border-width: thin;
+}
+
+h2
+{
+	margin-bottom: 0px;
+}
+
+.Sender
+{
+	width: 100px;
+}
+
+.Subject
+{
+	left: 110px;
+	width: 100px;
+}
+
+.Date
+{
+	left: 210px;
+	width: 150px;
+}

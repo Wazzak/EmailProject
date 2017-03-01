@@ -13,7 +13,7 @@ namespace EmailSite
 	{
 		SqlCommand cmd;
 		SqlConnection con;
-		SqlDataReader R;
+		SqlDataReader R;		
 
 		protected void Page_Load(object sender, EventArgs e)
 		{
@@ -37,6 +37,19 @@ namespace EmailSite
 			{
 				Response.Write(ex.ToString());
 			}
+
+			if (!IsPostBack)
+			{
+				if (Request.Cookies["rememberCookie"] != null && Request.Cookies["rememberCookie"].Value == "TRUE")
+				{
+					if (Request.Cookies["userMailcookie"] != null && Request.Cookies["userPasscookie"] != null)
+					{
+						TextBox1.Text = Request.Cookies["userMailCookie"].Value;
+						TextBox2.Text = Request.Cookies["userPassCookie"].Value;
+						Button7.Style.Add("background-color", "#99ff33");
+					}
+				}
+			}
 		}
 
 		protected void login_click(object sender, EventArgs e)
@@ -50,6 +63,16 @@ namespace EmailSite
 			R = cmd.ExecuteReader();
 			if (R.Read())
 			{
+				if(Request.Cookies["rememberCookie"] != null && Request.Cookies["rememberCookie"].Value == "TRUE")
+				{
+					HttpCookie userMail = new HttpCookie("userMailCookie");
+					userMail.Value = TextBox1.Text;
+					Response.Cookies.Add(userMail);
+					HttpCookie userPass = new HttpCookie("userPassCookie");
+					userPass.Value = TextBox2.Text;
+					Response.Cookies.Add(userPass);
+				}
+
 				Session["User"] = givenMail;
 				Response.Redirect("InboxPage.aspx");
 			}
@@ -90,6 +113,43 @@ namespace EmailSite
 			HttpCookie userColor = new HttpCookie("userColorCookie");
 			userColor.Value = "YELLOW";
 			Response.Cookies.Add(userColor);
+			
+		}
+
+		protected void remember_click(object sender, EventArgs e)
+		{
+			if (Request.Cookies["rememberCookie"] == null)
+				{
+					HttpCookie rememberCookie = new HttpCookie("rememberCookie");
+					rememberCookie.Value = "TRUE";
+					Response.Cookies.Add(rememberCookie);
+				}
+				else
+				{
+					if (Request.Cookies["rememberCookie"].Value == "TRUE")
+					{
+						HttpCookie rememberCookie = Request.Cookies["RememberCookie"];
+						rememberCookie.Value = "FALSE";
+						Response.Cookies.Add(rememberCookie);
+						
+					}
+					else if (Request.Cookies["rememberCookie"].Value == "FALSE")
+					{
+						HttpCookie rememberCookie = Request.Cookies["RememberCookie"];
+						rememberCookie.Value = "TRUE";
+						Response.Cookies.Add(rememberCookie);
+				}
+				}
+
+				if (Request.Cookies["rememberCookie"].Value == "TRUE")
+				{
+					Button7.Style.Add("background-color", "#99ff33");
+				}
+				else if (Request.Cookies["rememberCookie"].Value == "FALSE")
+				{
+					Button7.Style.Add("background-color", "#e1e1d0");
+				}
+			
 			
 		}
 	}
