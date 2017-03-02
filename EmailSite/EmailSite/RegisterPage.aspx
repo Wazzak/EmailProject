@@ -29,5 +29,10 @@
         <asp:Button ID="Button1" runat="server" OnClick="create_click" Text="Create" />
         <asp:Button ID="Button2" runat="server" OnClick="cancel_click" style="margin-left: 11px" Text="Cancel" />
     </form>
+
+    <span id="errorMessage" runat="server">
+            ERROR
+        </span>
+
 </body>
 </html>

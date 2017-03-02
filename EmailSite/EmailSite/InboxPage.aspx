@@ -16,6 +16,9 @@
         <asp:Button ID="Button2" runat="server" style="margin-left: 11px" Text="Address Book" OnClick="address_click" />
         <asp:Button ID="Button3" runat="server" style="margin-left: 11px" Text="Logout" OnClick="logout_click" />
     
+        <asp:Button ID="Button4" runat="server" OnClick="delete_click" style="margin-left: 11px" Text="Deleted" Width="79px" />
+        <asp:Button ID="Button5" runat="server" OnClick="sent_click" style="margin-left: 14px" Text="Sent" Width="58px" />
+    
     </div>
 
         <div id="AddressBox" runat="server">
@@ -23,6 +26,14 @@
         </div>
 
         <div id="inboxDisplay" runat="server">
+            
+        </div>
+
+        <div id="deletedDisplay" runat="server">
+            
+        </div>
+
+        <div id="sentDisplay" runat="server">
             
         </div>
 

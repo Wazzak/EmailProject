@@ -23,7 +23,7 @@ namespace EmailSite
 				return;
 			}
 
-			if(Request["ID"] == null)
+			if(Request["EID"] == null)
 			{
 				form1.Style.Add("visibility", "hidden");
 				Response.Write("Error, no email selected");
@@ -71,6 +71,11 @@ namespace EmailSite
 
 			cmd.CommandText = "UPDATE Mails SET Status=1 where EID=" + ID;
 			cmd.ExecuteNonQuery();
+
+			if(Request["S"] != null && Request["S"] == "TRUE")
+			{
+				deleteButton.Style.Add("visibility", "hidden");
+			}
 			
 		}
 

@@ -19,7 +19,7 @@
             Subject:<asp:TextBox ID="TextBox2" runat="server" style="margin-left: 11px; margin-bottom: 1px" ReadOnly="True"></asp:TextBox>
         </p>
         <p>
-            Body:<asp:Button ID="Button1" runat="server" style="margin-left: 225px" Text="Delete" OnClick="delete_click" />
+            Body:<asp:Button ID="deleteButton" runat="server" style="margin-left: 225px" Text="Delete" OnClick="delete_click" />
         </p>
         <p>
             <asp:TextBox ID="TextBox3" runat="server" Height="196px" style="margin-left: 8px" Width="316px" ReadOnly="True"></asp:TextBox>

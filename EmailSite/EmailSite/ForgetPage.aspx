@@ -25,5 +25,9 @@
         </p>
         <asp:Button ID="Button2" runat="server" Text="Home" OnClick="home_click" />
     </form>
+
+    <span id="errorMessage" runat="server">
+            ERROR
+    </span>
 </body>
 </html>

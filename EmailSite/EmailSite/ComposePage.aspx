@@ -17,7 +17,7 @@
     
     </div>
         <p>
-            Subject:<asp:TextBox ID="TextBox2" runat="server" style="margin-left: 18px"></asp:TextBox>
+            Subject:<asp:TextBox ID="TextBox2" runat="server" style="margin-left: 18px" MaxLength="12"></asp:TextBox>
         </p>
         <p>
             Body:</p>
@@ -28,6 +28,10 @@
             <asp:Button ID="Button1" runat="server" Text="Send" OnClick="send_click" />
             <asp:Button ID="Button2" runat="server" OnClick="cancel_click" style="margin-left: 18px" Text="Cancel" />
         </p>
+
+        <span id="errorMessage" runat="server">
+            ERROR
+        </span>
     </form>
 </body>
 </html>

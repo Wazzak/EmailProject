@@ -50,7 +50,7 @@ namespace EmailSite
 			}
 			else
 			{
-				Response.Write("Error, passwords do not match");
+				errorMessage.Style.Add("visibility", "visible");
 				TextBox4.Text = "";
 				TextBox5.Text = "";
 				TextBox4.Focus();
@@ -61,7 +61,7 @@ namespace EmailSite
 
 			if(newName == "" || newAdd == "" || newMail == "" || newAnswer == "" || newPass == "")
 			{
-				Response.Write("Please insert all values");
+				errorMessage.Style.Add("visibility", "visible");
 				return;
 			}
 
@@ -76,7 +76,7 @@ namespace EmailSite
 			{
 				if (ex.Number == 2627)
 				{
-					Response.Write("An account with this email address already exists.");
+					errorMessage.Style.Add("visibility", "visible");
 				}
 				else
 				{

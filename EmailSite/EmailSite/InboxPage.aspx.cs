@@ -47,29 +47,47 @@ namespace EmailSite
 			cmd.CommandText = "SELECT * FROM Mails WHERE Receiver='" + Session["User"] + "'";
 			R = cmd.ExecuteReader();
 
-			inboxDisplay.InnerHtml += ("<span class='Sender'>Sender</span> <span class='Subject'>Subject</span> <span class='Date'>Date</span><br>");
-			while(R.Read())
+			String inboxContent = "";
+			inboxContent += ("<span class='Sender'>Sender</span> <span class='Subject'>Subject</span> <span class='Date'>Date</span><br>");
+			while (R.Read())
 			{
 				if (Convert.ToInt32(R["Deleted"]) != 1)
 				{
 					if (Convert.ToInt32(R["Status"]) == 0)
 					{
-						inboxDisplay.InnerHtml += ("<b>");
+						inboxContent += ("<b>");
 					}
 
-					inboxDisplay.InnerHtml += ("<span class='Sender'>" + R["Sender"].ToString() + "</span>");
-					inboxDisplay.InnerHtml += ("<span class='Subject'><a href='ReadPage.aspx?EID=" + R["EID"] + "'>" + R["Subject"].ToString() + "</a></span>");
-					inboxDisplay.InnerHtml += ("<span class='Date'>" + R["Date"].ToString() + "</span>");
-					inboxDisplay.InnerHtml += ("<br>");
+					inboxContent += ("<span class='Sender'>" + R["Sender"].ToString() + "</span>");
+					inboxContent += ("<span class='Subject'><a href='ReadPage.aspx?EID=" + R["EID"] + "'>" + R["Subject"].ToString() + "</a></span>");
+					inboxContent += ("<span class='Date'>" + R["Date"].ToString() + "</span>");
+					inboxContent += ("<br>");
 
 					if (Convert.ToInt32(R["Status"]) == 0)
 					{
-						inboxDisplay.InnerHtml += ("</b>");
+						inboxContent += ("</b>");
 					}
 
 				}
 			}
+			inboxDisplay.InnerHtml = inboxContent;
 
+			R.Close();
+
+			cmd.CommandText = "SELECT COUNT(Deleted) FROM Mails WHERE Deleted= 1 AND Receiver='" + Session["User"] + "'";
+			R = cmd.ExecuteReader();
+			if (R.Read())
+			{
+				Button4.Text += " (" + R[0].ToString() + ")";
+			}
+			R.Close();
+
+			cmd.CommandText = "SELECT COUNT(Sender) FROM Mails WHERE Sender='" + Session["User"] + "'";
+			R = cmd.ExecuteReader();
+			if(R.Read())
+			{
+				Button5.Text += " (" + R[0].ToString() + ")";
+			}
 			R.Close();
 
 		}
@@ -90,11 +108,53 @@ namespace EmailSite
 			cmd.CommandText = "SELECT * FROM USERS";
 			R = cmd.ExecuteReader();
 
+			String addressContent = "";
 			while(R.Read())
 			{
-				AddressBox.InnerHtml += "<a href='ComposePage.aspx?To=" +  R["Email"] + "'>" + R["Email"] + "</a><br>";
+				addressContent += "<a href='ComposePage.aspx?To=" +  R["Email"] + "'>" + R["Email"] + "</a><br>";
 			}
-			
+			AddressBox.InnerHtml = addressContent;
+		}
+
+		protected void delete_click(object sender, EventArgs e)
+		{
+			cmd.CommandText = "SELECT * FROM Mails WHERE Deleted= 1 AND Receiver='" + Session["User"] + "'";
+			R = cmd.ExecuteReader();
+
+			String deletedContent = "";
+			deletedContent += ("<h2>Deleted Mails</h2><span class='Sender'>Sender</span> <span class='Subject'>Subject</span> <span class='Date'>Date</span><br>");
+			while (R.Read())
+			{	
+				deletedContent += ("<span class='Sender'>" + R["Sender"].ToString() + "</span>");
+				deletedContent += ("<span class='Subject'><a href='ReadPage.aspx?EID=" + R["EID"] + "'>" + R["Subject"].ToString() + "</a></span>");
+				deletedContent += ("<span class='Date'>" + R["Date"].ToString() + "</span>");
+				deletedContent += ("<br>");
+							
+			}
+
+			deletedDisplay.Style.Add("visibility", "visible");
+			deletedDisplay.InnerHtml = deletedContent;
+			R.Close();
+		}
+
+		protected void sent_click(object sender, EventArgs e)
+		{
+			cmd.CommandText = "SELECT * FROM Mails WHERE Sender='" + Session["User"] + "'";
+			R = cmd.ExecuteReader();
+
+			String sentContent = "";
+			sentContent += ("<h2>Sent Mails</h2><span class='Sender'>Receiver</span><span class='Subject'>Subject</span><span class='Date'>Date</span><br>");
+			while(R.Read())
+			{
+				sentContent += ("<span class='Sender'>" + R["Receiver"].ToString() + "</span>");
+				sentContent += ("<span class='Subject'><a href='ReadPage.aspx?EID=" + R["EID"] + "&S=TRUE'>" + R["Subject"].ToString() + "</a></span>");
+				sentContent += ("<span class='Date'>" + R["Date"].ToString() + "</span>");
+				sentContent += ("<br>");
+			}
+
+			sentDisplay.Style.Add("visibility", "visible");
+			sentDisplay.InnerHtml = sentContent;
+			R.Close();
 		}
 	}
 }

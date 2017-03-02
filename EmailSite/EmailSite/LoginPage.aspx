@@ -35,5 +35,10 @@
             <asp:Button ID="Button6" runat="server" OnClick="yellow_click" style="margin-left: 9px" Text="Yellow" />
         </p>
     </form>
+
+    <span id="errorMessage" runat="server">
+            ERROR
+        </span>
+
 </body>
 </html>

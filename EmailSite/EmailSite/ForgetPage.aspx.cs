@@ -49,7 +49,7 @@ namespace EmailSite
 			}
 			else
 			{
-				Response.Write("Incorrect details");
+				errorMessage.Style.Add("visibility", "visible");
 			}
 		}
 

@@ -78,7 +78,7 @@ namespace EmailSite
 			}
 			else
 			{
-				Response.Write("User or password incorrect");
+				errorMessage.Style.Add("visibility", "visible");
 			}
 		}
 
@@ -95,7 +95,7 @@ namespace EmailSite
 		protected void red_click(object sender, EventArgs e)
 		{
 			HttpCookie userColor = new HttpCookie("userColorCookie");
-			userColor.Value = "RED";
+			userColor.Value = "#ff1a1a";
 			Response.Cookies.Add(userColor);
 				
 		}
@@ -103,7 +103,7 @@ namespace EmailSite
 		protected void blue_click(object sender, EventArgs e)
 		{
 			HttpCookie userColor = new HttpCookie("userColorCookie");
-			userColor.Value = "BLUE";
+			userColor.Value = "#00bfff";
 			Response.Cookies.Add(userColor);
 			
 		}
@@ -111,7 +111,7 @@ namespace EmailSite
 		protected void yellow_click(object sender, EventArgs e)
 		{
 			HttpCookie userColor = new HttpCookie("userColorCookie");
-			userColor.Value = "YELLOW";
+			userColor.Value = "#ffd11a";
 			Response.Cookies.Add(userColor);
 			
 		}
