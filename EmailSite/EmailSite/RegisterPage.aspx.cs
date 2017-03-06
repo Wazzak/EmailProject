@@ -51,6 +51,7 @@ namespace EmailSite
 			else
 			{
 				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Passwords do not match";
 				TextBox4.Text = "";
 				TextBox5.Text = "";
 				TextBox4.Focus();
@@ -62,6 +63,7 @@ namespace EmailSite
 			if(newName == "" || newAdd == "" || newMail == "" || newAnswer == "" || newPass == "")
 			{
 				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Please insert all values";
 				return;
 			}
 
@@ -77,6 +79,7 @@ namespace EmailSite
 				if (ex.Number == 2627)
 				{
 					errorMessage.Style.Add("visibility", "visible");
+					errorMessage.InnerHtml = "Email already in use.";
 				}
 				else
 				{

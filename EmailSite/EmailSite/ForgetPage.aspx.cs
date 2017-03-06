@@ -41,6 +41,20 @@ namespace EmailSite
 			mail = TextBox1.Text;
 			answer = TextBox2.Text;
 
+			if(mail == "")
+			{
+				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Please insert the Email";
+				return;
+			}
+
+			if (answer == "")
+			{
+				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Please insert the secret answer";
+				return;
+			}
+
 			cmd.CommandText = "SELECT * FROM USERS WHERE EMAIL='" + mail + "' AND SecretAnswer='" + answer + "'";
 			R = cmd.ExecuteReader();
 			if(R.Read())
@@ -50,6 +64,7 @@ namespace EmailSite
 			else
 			{
 				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Error; Details incorrect.";
 			}
 		}
 

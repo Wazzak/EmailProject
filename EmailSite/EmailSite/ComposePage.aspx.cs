@@ -20,6 +20,7 @@ namespace EmailSite
 			{
 				form1.Style.Add("visibility", "hidden");
 				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Error, not logged in";
 				return;
 			}
 
@@ -71,6 +72,7 @@ namespace EmailSite
 			if(rcv == "" || subject == "" || body == "")
 			{
 				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Please insert all values";
 				return;
 			}
 

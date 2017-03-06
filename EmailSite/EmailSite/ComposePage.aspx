@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href=".//Style.css">
 </head>
 <body>
     <form id="form1" runat="server">
@@ -13,7 +13,8 @@
     
         Compose new mail<br />
         <br />
-        To:<asp:TextBox ID="TextBox1" runat="server" style="margin-left: 17px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        To:<asp:TextBox ID="TextBox1" runat="server" style="margin-left: 9px"></asp:TextBox>
     
     </div>
         <p>

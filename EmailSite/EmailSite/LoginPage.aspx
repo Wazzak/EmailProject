@@ -5,16 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title></title>
-     <link rel="stylesheet" type="text/css" href="Style.css">
+     <link rel="stylesheet" type="text/css" href=".//Style.css">
 </head>
 <body>
     <form id="form1" runat="server">
     <div id="words" runat="server">
     
-        Email:<asp:TextBox ID="TextBox1" runat="server" style="margin-left: 11px"></asp:TextBox>
+        Email Address:<asp:TextBox ID="TextBox1" runat="server" style="margin-left: 11px"></asp:TextBox>
     
     </div>
-        <p>
+        <p style="margin-left: 28px">
             Password:<asp:TextBox ID="TextBox2" runat="server" style="margin-left: 11px"></asp:TextBox>
         </p>
         <p>
@@ -30,9 +30,9 @@
         <p>
             Color:</p>
         <p>
-            <asp:Button ID="Button4" runat="server" OnClick="red_click" Text="Red" />
-            <asp:Button ID="Button5" runat="server" OnClick="blue_click" style="margin-left: 13px" Text="Blue" />
-            <asp:Button ID="Button6" runat="server" OnClick="yellow_click" style="margin-left: 9px" Text="Yellow" />
+            <asp:Button class="homeButton"  ID="Button4" runat="server" OnClick="red_click" Text="Red" />
+            <asp:Button class="homeButton" ID="Button5" runat="server" OnClick="blue_click" style="margin-left: 13px" Text="Blue" />
+            <asp:Button class="homeButton" ID="Button6" runat="server" OnClick="yellow_click" style="margin-left: 9px" Text="Yellow" />
         </p>
     </form>
 

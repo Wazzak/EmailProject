@@ -59,6 +59,20 @@ namespace EmailSite
 			givenMail = TextBox1.Text;
 			givenPass = TextBox2.Text;
 
+			if(givenMail == "")
+			{
+				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Please insert a username";
+				return;
+			}
+
+			if (givenPass == "")
+			{
+				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Please insert a password";
+				return;
+			}
+
 			cmd.CommandText = "select * from Users where Email='" + givenMail + "' and Password='" + givenPass + "'";
 			R = cmd.ExecuteReader();
 			if (R.Read())
@@ -79,6 +93,7 @@ namespace EmailSite
 			else
 			{
 				errorMessage.Style.Add("visibility", "visible");
+				errorMessage.InnerHtml = "Username or password was incorrect";
 			}
 		}
 
@@ -97,7 +112,10 @@ namespace EmailSite
 			HttpCookie userColor = new HttpCookie("userColorCookie");
 			userColor.Value = "#ff1a1a";
 			Response.Cookies.Add(userColor);
-				
+
+			Button4.Style.Add("background-color", "#99ff33");
+			Button5.Style.Add("background-color", "#e1e1d0");
+			Button6.Style.Add("background-color", "#e1e1d0");
 		}
 
 		protected void blue_click(object sender, EventArgs e)
@@ -105,7 +123,10 @@ namespace EmailSite
 			HttpCookie userColor = new HttpCookie("userColorCookie");
 			userColor.Value = "#00bfff";
 			Response.Cookies.Add(userColor);
-			
+
+			Button4.Style.Add("background-color", "#e1e1d0");
+			Button5.Style.Add("background-color", "#99ff33");
+			Button6.Style.Add("background-color", "#e1e1d0");
 		}
 
 		protected void yellow_click(object sender, EventArgs e)
@@ -113,7 +134,10 @@ namespace EmailSite
 			HttpCookie userColor = new HttpCookie("userColorCookie");
 			userColor.Value = "#ffd11a";
 			Response.Cookies.Add(userColor);
-			
+
+			Button4.Style.Add("background-color", "#e1e1d0");
+			Button5.Style.Add("background-color", "#e1e1d0");
+			Button6.Style.Add("background-color", "#99ff33");
 		}
 
 		protected void remember_click(object sender, EventArgs e)

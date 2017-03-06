@@ -5,13 +5,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-     <link rel="stylesheet" type="text/css" href="Style.css">
+     <link rel="stylesheet" type="text/css" href=".//Style.css">
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
     
-        Email:<asp:TextBox ID="TextBox1" runat="server" style="margin-left: 13px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+        Email Address:<asp:TextBox ID="TextBox1" runat="server" style="margin-left: 13px"></asp:TextBox>
     
     </div>
         <p>

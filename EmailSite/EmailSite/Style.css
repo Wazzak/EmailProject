@@ -2,7 +2,7 @@
 {
 	visibility: hidden;
 	z-index: 100;
-	color: RED;
+	color: black;
 	left: 40%;
 	top: 20%;
 	font-size: 50px;
@@ -23,19 +23,20 @@ h2
 
 .Sender
 {
+	left:30px;
 	width: 100px;
 }
 
 .Subject
 {
-	left: 100px;
+	left: 130px;
 	width: 100px;
 }
 
 .Date
 {
-	left: 200px;
-	width: 150px;
+	left: 230px;
+	width: 180px;
 }
 
 #deletedDisplay
@@ -65,5 +66,22 @@ h2
 	margin: 0px;
 	left: 0px;
 	top: 0px;
+	padding:10px;
+	font-family: tahoma;
+}
+
+#noMail
+{
+	padding:5px;
+	margin-left:20px;
+	margin-top:20px;
+	font-size:2em;
+}
+
+#homeButton
+{
+	border-style:solid;
+	border-width:2px;
+	color:#e1e1d0;
 }
 
